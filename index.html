@@ -7,6 +7,16 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <header>
+      <img src="assets/the-argo-logo-black.png" alt="Logo" class="logo" />
+      <ul>
+        <li><a href="/index.html">Présentation</a></li>
+        <li><a href="/heroes.html">Héros</a></li>
+        <li><a href="/inventory.html">Inventaire</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </header>
+
     <section class="container" id="welcome">
       <h1 class="center">Bienvenue à bord de l'Argo !</h1>
     </section>
@@ -15,65 +25,21 @@
       <h2>Histoire du navire Argo</h2>
       <p class="blue-text">
         C'est l'histoire d'un très vieux bateau qui flotte sur les eaux
-        douteuses de la Mediterranée. Il fut construit dans l'Antiquité sous la
-        protection de la déesse Hera et avec l'aide d'Athena. Selon certaines
+        douteuses de la Mediterranée. </br> Il fut construit dans l'Antiquité sous la
+        protection de la déesse Hera et avec l'aide d'Athena. </br> Selon certaines
         sources, Argo a été le premier bateau a traverser les mers.
       </p>
     </section>
 
-    <section id="heroes">
-      <div></div>
-      <div></div>
-      <div></div>
+    <section>
+      <p id="myText">
+        This paragraph will change to "Hello World" when the page loads in the
+        browser.
+      </p>
+      <script>
+        // Hello world
+        document.getElementById("myText").innerHTML = "Hello World";
+      </script>
     </section>
-
-<section id="inventory">
-     <h2>Inventory</h2>
-     <table>
-       <thead>
-         <tr>
-           <th>Item</th>
-           <th>Amount</th>
-           <th>Duration</th>
-         </tr>
-       </thead>
-       <tbody>
-         <tr>
-           <td>Water canisters</td>
-           <td>102</td>
-           <td>4 weeks</td>
-         </tr>
-         <tr>
-           <td>Bread</td>
-           <td>35</td>
-           <td>7 days</td>
-         </tr>
-         <tr>
-           <td>Goats</td>
-           <td>20</td>
-           <td>2 weeks</td>
-         </tr>
-         <tr>
-           <td>Sandals</td>
-           <td>99</td>
-           <td>Eternity</td>
-         </tr>
-       </tbody>
-     <table>
-   </section>
-
-   <section id="contact">
-        <form id="contactForm">
-          <label for="name">First name:</label><br>
-          <input type="text" id="name" name="name" value="John"><br>
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" value="example@seamail.com"><br>
-          <label for="message">Message:</label><br>
-          <textarea id="message" name="message"></textarea>
-          <br><br>
-          <input type="submit" value="Submit">
-        </form>
-   </section>
-
   </body>
 </html>
